@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+    color: rgb(210, 128, 189);
+    font-family: Arial, sans-serif;
+    width: 500px; /* Set fixed width for the body */
+    margin: 0 auto; /* Center the body horizontally */
+}
+
+.container {
+    display: inline-block; /* Use inline-block to make it a block-level element */
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 25px;
+    padding: 15px;
+    width: 250px; /* Set fixed width for the container */
+}
+
+.col {
+    display: flex; /* Set display to flex for .col */
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+    margin: 0;
+}
+
+h2 {
+    color: pink;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: pink;
+    text-align: center;
+    font-size: 25px;
+    padding: 0;
+}
+
+ul {
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.neon {
+    text-shadow: 0 -1px 0 #f00, 
+                 0 2px 0 #f00,
+                 0 4px 0 #60F,
+                 -2px -2px 15px rgb(101, 16, 76),
+                 2px -2px 15px rgb(101, 16, 76),
+                 -2px 2px 15px rgb(101, 16, 76),
+                 2px 2px 15px rgb(101, 16, 76);
+}
+
+.main {
+    border: 10px solid #ff69b4; 
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgb(226, 60, 176),
+                0 0 15px rgb(226, 60, 176),
+                0 0 15px rgb(101, 16, 76);
+}
+
+.container img {
+    margin-top: 20px;
+    max-width: 200px; 
+    height: auto;
+    width: 100%; /* Make the image responsive within its container */
+}
+
+ul {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 20px;
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+ul li::before {
+    content: '\2713'; 
+    color: pink; 
+    font-size: 20px; 
+    position: absolute;
+    left: -25px;
+}
